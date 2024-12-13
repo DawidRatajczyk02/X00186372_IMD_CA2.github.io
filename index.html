@@ -1,0 +1,880 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Website</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/styles.css">
+  <!-- Other CSS links -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#navbarNav" data-bs-offset="100" tabindex="0">
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#splash"><i class="fa-solid fa-user"></i> Portfolio</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#about"><i class="fa-solid fa-user"></i> About Me</a></li>
+          <li class="nav-item"><a class="nav-link" href="#education"><i class="fa-solid fa-graduation-cap"></i> Education</a></li>
+          <li class="nav-item"><a class="nav-link" href="#experience"><i class="fa-solid fa-briefcase"></i> Experience</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects"><i class="fa-solid fa-laptop-code"></i> Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills"><i class="fa-solid fa-lightbulb"></i> Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#achievements"><i class="fa-solid fa-trophy"></i> Achievements</a></li>
+          <li class="nav-item"><a class="nav-link" href="#references"><i class="fa-solid fa-users"></i> References</a></li>
+          <li class="nav-item"><a class="nav-link" href="#hobbies"><i class="fa-solid fa-gamepad"></i> Hobbies</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact"><i class="fa-solid fa-envelope"></i> Contact Me</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- Splash Section -->
+  <section id="splash" class="d-flex align-items-center justify-content-center text-center">
+    <div class="container">
+      <div class="row">
+        <!-- Left Column: Text -->
+        <div class="col-md-6 d-flex flex-column justify-content-center">
+          <h1 class="display-4">Hi, I'm <span class="text-primary">Dawid Ratajczyk</span></h1>
+          <p class="lead mt-3">A dedicated <strong>Developer</strong> creating impactful solutions.</p>
+          <div class="mt-4">
+            <a href="#projects" class="btn btn-primary btn-lg me-3">View My Projects</a>
+            <button class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#contactModal">
+              Contact Me
+            </button>
+          </div>
+        </div>
+
+        <!-- Right Column: Photo -->
+        <div class="col-md-6">
+          <img src="images/face.jpg" alt="Your Photo" width="400" height="400"
+            class="img-fluid rounded-circle shadow-lg">
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- About Me -->
+  <section id="about" class="py-5 bg-light">
+    <div class="container">
+      <div class="row align-items-center">
+        <!-- Left Column: Profile Picture -->
+        <div class="col-lg-5 text-center mb-4 mb-lg-0">
+          <img src="images/face.jpg" alt="Profile Picture" class="img-fluid rounded-circle shadow" width="300">
+        </div>
+        <!-- Right Column: About Me Content -->
+        <div class="col-lg-7">
+          <h2 class="mb-4">About Me</h2>
+          <p>
+            Hi, I'm <strong>Dawid Ratajczyk</strong>, a passionate student at TU Dublin, specializing in Software
+            Development.
+            With a keen interest in Game Development, I thrive on exploring innovative solutions and expanding my skill
+            set to make a meaningful impact.
+          </p>
+          <p>
+            When I'm not busy working on academic projects or developing my skills,
+            I enjoy Gaming and working out at the Gym. My goal is to continuously grow, learn, and contribute to to the
+            world.
+          </p>
+          <div class="mt-4">
+            <a href="#contact" class="btn btn-primary btn-lg me-3">Get in Touch</a>
+            <a href="#" class="btn btn-outline-dark btn-lg" id="fakeResumeButton">Download My Resume</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Fake Resume Modal -->
+<div class="modal fade" id="fakeResumeModal" tabindex="-1" aria-labelledby="fakeResumeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="fakeResumeModalLabel">Resume Coming Soon</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        My resume is comming soon!
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <!-- Education -->
+  <section id="education" class="py-5">
+    <div class="container">
+      <h2 class="mb-4 text-center">Education</h2>
+      <!-- Tabs for Each Year -->
+      <ul class="nav nav-tabs" id="educationTabs" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active" id="year3-tab" data-bs-toggle="tab" data-bs-target="#year3" type="button"
+            role="tab" aria-controls="year3" aria-selected="true">
+            Year 3
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="year2-tab" data-bs-toggle="tab" data-bs-target="#year2" type="button" role="tab"
+            aria-controls="year2" aria-selected="false">
+            Year 2
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="year1-tab" data-bs-toggle="tab" data-bs-target="#year1" type="button" role="tab"
+            aria-controls="year1" aria-selected="false">
+            Year 1
+          </button>
+        </li>
+      </ul>
+
+      <!-- Tab Content -->
+      <div class="tab-content mt-4" id="educationTabsContent">
+
+        <!-- Year 3 Content -->
+        <div class="tab-pane fade show active" id="year3" role="tabpanel" aria-labelledby="year3-tab">
+          <h4>Year 3 GPA: 3.25</h4>
+          <div class="accordion" id="year3Accordion">
+            <!-- Semester 5 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="year3Semester5Header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#year3Semester5" aria-expanded="true" aria-controls="year3Semester5">
+                  Semester 5
+                </button>
+              </h2>
+              <div id="year3Semester5" class="accordion-collapse collapse show" aria-labelledby="year3Semester5Header">
+                <div class="accordion-body">
+                  <table class="table table-bordered">
+                    <thead>
+                      <tr>
+                        <th>Subject</th>
+                        <th>Grade</th>
+                        <th>Percentage (%)</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Data Analysis</td>
+                        <td>A</td>
+                        <td>82%</td>
+                      </tr>
+                      <tr>
+                        <td>Big Data Technologies</td>
+                        <td>B+</td>
+                        <td>72%</td>
+                      </tr>
+                      <tr>
+                        <td>Data Structures & Algorithms</td>
+                        <td>B</td>
+                        <td>67%</td>
+                      </tr>
+                      <tr>
+                        <td>Operating Systems</td>
+                        <td>B</td>
+                        <td>63%</td>
+                      </tr>
+                      <tr>
+                        <td>Server-side Web Development</td>
+                        <td>B</td>
+                        <td>61%</td>
+                      </tr>
+                      <tr>
+                        <td>Cloud Services & Distributed Computing</td>
+                        <td>B</td>
+                        <td>60%</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+            <!-- Semester 6 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="year3Semester6Header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#year3Semester6" aria-expanded="false" aria-controls="year3Semester6">
+                  Semester 6
+                </button>
+              </h2>
+              <div id="year3Semester6" class="accordion-collapse collapse" aria-labelledby="year3Semester6Header">
+                <div class="accordion-body">
+                  <table class="table table-bordered">
+                    <thead>
+                      <tr>
+                        <th>Subject</th>
+                        <th>Grade</th>
+                        <th>Percentage (%)</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Experimental Learning</td>
+                        <td>Pass</td>
+                        <td>75%</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Year 2 Content -->
+        <div class="tab-pane fade" id="year2" role="tabpanel" aria-labelledby="year2-tab">
+          <h4>Year 2 GPA: 3.65</h4>
+          <div class="accordion" id="year2Accordion">
+            <!-- Semester 3 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="year2Semester3Header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#year2Semester3" aria-expanded="true" aria-controls="year2Semester3">
+                  Semester 3
+                </button>
+              </h2>
+              <div id="year2Semester3" class="accordion-collapse collapse show" aria-labelledby="year2Semester3Header">
+                <div class="accordion-body">
+                  <table class="table table-bordered">
+                    <thead>
+                      <tr>
+                        <th>Subject</th>
+                        <th>Grade</th>
+                        <th>Percentage (%)</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Discrete Mathematics 2</td>
+                        <td>A</td>
+                        <td>91%</td>
+                      </tr>
+                      <tr>
+                        <td>Network Fundamentals</td>
+                        <td>A</td>
+                        <td>85%</td>
+                      </tr>
+                      <tr>
+                        <td>Software Development 3</td>
+                        <td>A</td>
+                        <td>85%</td>
+                      </tr>
+                      <tr>
+                        <td>Advanced Database Technologies</td>
+                        <td>B+</td>
+                        <td>70%</td>
+                      </tr>
+                      <tr>
+                        <td>Software Quality Assurance & Testing</td>
+                        <td>B</td>
+                        <td>64%</td>
+                      </tr>
+                      <tr>
+                        <td>Client-side Web Development</td>
+                        <td>B</td>
+                        <td>60%</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+            <!-- Semester 4 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="year2Semester4Header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#year2Semester4" aria-expanded="false" aria-controls="year2Semester4">
+                  Semester 4
+                </button>
+              </h2>
+              <div id="year2Semester4" class="accordion-collapse collapse" aria-labelledby="year2Semester4Header">
+                <div class="accordion-body">
+                  <table class="table table-bordered">
+                    <thead>
+                      <tr>
+                        <th>Subject</th>
+                        <th>Grade</th>
+                        <th>Percentage (%)</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Routing & Switching Essentials</td>
+                        <td>A</td>
+                        <td>93%</td>
+                      </tr>
+                      <tr>
+                        <td>Management Science</td>
+                        <td>A</td>
+                        <td>90%</td>
+                      </tr>
+                      <tr>
+                        <td>Software Development 4</td>
+                        <td>A</td>
+                        <td>86%</td>
+                      </tr>
+                      <tr>
+                        <td>Database Admin & Analysis</td>
+                        <td>A</td>
+                        <td>80%</td>
+                      </tr>
+                      <tr>
+                        <td>Information Security</td>
+                        <td>B+</td>
+                        <td>70%</td>
+                      </tr>
+                      <tr>
+                        <td>Project</td>
+                        <td>B-</td>
+                        <td>56%</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Year 1 Content -->
+        <div class="tab-pane fade" id="year1" role="tabpanel" aria-labelledby="year1-tab">
+          <h4>Year 1 GPA: 3.42</h4>
+          <div class="accordion" id="year1Accordion">
+            <!-- Semester 1 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="year1Semester1Header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#year1Semester1" aria-expanded="true" aria-controls="year1Semester1">
+                  Semester 1
+                </button>
+              </h2>
+              <div id="year1Semester1" class="accordion-collapse collapse show" aria-labelledby="year1Semester1Header">
+                <div class="accordion-body">
+                  <table class="table table-bordered">
+                    <thead>
+                      <tr>
+                        <th>Subject</th>
+                        <th>Grade</th>
+                        <th>Percentage (%)</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Discrete Mathematics 1</td>
+                        <td>A</td>
+                        <td>80%</td>
+                      </tr>
+                      <tr>
+                        <td>Computer Architecture</td>
+                        <td>B+</td>
+                        <td>76%</td>
+                      </tr>
+                      <tr>
+                        <td>Critical Skills Development</td>
+                        <td>B+</td>
+                        <td>73%</td>
+                      </tr>
+                      <tr>
+                        <td>Software Development 1</td>
+                        <td>B+</td>
+                        <td>71%</td>
+                      </tr>
+                      <tr>
+                        <td>Business & Information Systems</td>
+                        <td>B</td>
+                        <td>64%</td>
+                      </tr>
+                      <tr>
+                        <td>Visual Design & User Experience</td>
+                        <td>C</td>
+                        <td>47%</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+            <!-- Semester 2 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="year1Semester2Header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#year1Semester2" aria-expanded="false" aria-controls="year1Semester2">
+                  Semester 2
+                </button>
+              </h2>
+              <div id="year1Semester2" class="accordion-collapse collapse" aria-labelledby="year1Semester2Header">
+                <div class="accordion-body">
+                  <table class="table table-bordered">
+                    <thead>
+                      <tr>
+                        <th>Subject</th>
+                        <th>Grade</th>
+                        <th>Percentage (%)</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Statistics</td>
+                        <td>A</td>
+                        <td>89%</td>
+                      </tr>
+                      <tr>
+                        <td>Database Fundamentals</td>
+                        <td>A</td>
+                        <td>82%</td>
+                      </tr>
+                      <tr>
+                        <td>Social Media Communications</td>
+                        <td>A</td>
+                        <td>80%</td>
+                      </tr>
+                      <tr>
+                        <td>Software Development 2</td>
+                        <td>B+</td>
+                        <td>76%</td>
+                      </tr>
+                      <tr>
+                        <td>Operating Systems Fundamentals</td>
+                        <td>B</td>
+                        <td>62%</td>
+                      </tr>
+                      <tr>
+                        <td>System Analysis</td>
+                        <td>B</td>
+                        <td>61%</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section id="experience" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="mb-4 text-center">Experience</h2>
+      <div class="row align-items-center">
+        <!-- Left Column: Company Logo -->
+        <div class="col-lg-4 text-center mb-4 mb-lg-0">
+          <img src="images/logo.jpg" alt="Company Logo" class="img-fluid rounded shadow" width="400">
+        </div>
+        <!-- Right Column: Experience Details -->
+        <div class="col-lg-8">
+          <h4>Internship / Work Experience</h4>
+          <p><strong>Company:</strong> Information Providers Ltd.</p>
+          <p><strong>Position:</strong> IT Support</p>
+          <p><strong>Duration:</strong> 29/01/2024 - 12/07/2024</p>
+          <p><strong>Description:</strong></p>
+          <ul>
+            <li>Provided technical support and troubleshooting.</li>
+            <li>Assisted in setting up and maintaining hardware and software systems, including desktop computers,
+              laptops, and networking devices.</li>
+            <li>Documented recurring issues and created detailed reports to improve future troubleshooting processes.
+            </li>
+            <li>Gained hands-on experience with IT problems.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Projects -->
+  <section id="projects" class="py-5">
+    <div class="container">
+      <h2 class="mb-4 text-center">Projects</h2>
+      <div class="row">
+
+        <!-- Second Year Project -->
+        <div class="col-md-6">
+          <div class="card mb-4 shadow-sm">
+            <div class="card-body">
+              <h4 class="card-title">Second Year Project</h4>
+              <p><strong>Title:</strong> Candy Shop E-commerce</p>
+              <p><strong>Technologies Used:</strong> Django/Python and HTML with CSS</p>
+              <p><strong>Description:</strong></p>
+              <ul>
+                <li>Candy shop e-commerce website with user authentication and payment system.</li>
+                <li>Had a functional admin panel for managing products and orders.</li>
+              </ul>
+              <p><strong>Outcome:</strong> Successfully delivered with a B- Grade.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Final Year Project -->
+        <div class="col-md-6">
+          <div class="card mb-4 shadow-sm">
+            <div class="card-body">
+              <h4 class="card-title">Final Year Project</h4>
+              <p><strong>Title:</strong> Java 2D Platformer</p>
+              <p><strong>Technologies Used:</strong> All Java Native libraries</p>
+              <p><strong>Description:</strong></p>
+              <ul>
+                <li>A Java 2D Platformer game using java native libraries</li>
+                <li>Wil have basic functions like characters, levels and enemies along with animations</li>
+              </ul>
+              <p><strong>Status:</strong> Ongoing. Expected completion: April 2025.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="mb-4 text-center">Skills</h2>
+      <div class="row g-4">
+
+        <!-- Technical Skills Card -->
+        <div class="col-md-6">
+          <div class="card shadow-sm h-100">
+            <div class="card-body">
+              <h4 class="card-title text-center">Technical Skills</h4>
+              <ul>
+                <li>Proficient in basic programming (Python, Java, C#).</li>
+                <li>Familiar with databases (MySQL) and web development (HTML, CSS).</li>
+                <li>Understanding of computer networking fundamentals.</li>
+                <li>Experience troubleshooting hardware and software issues.</li>
+              </ul>
+              <div class="progress mb-3">
+                <div class="progress-bar bg-success" role="progressbar" style="width: 53%;" aria-valuenow="53"
+                  aria-valuemin="0" aria-valuemax="100">53%</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Practical Problem-Solving Card -->
+        <div class="col-md-6">
+          <div class="card shadow-sm h-100">
+            <div class="card-body">
+              <h4 class="card-title text-center">Practical Problem-Solving</h4>
+              <ul>
+                <li>Built a custom PC, optimizing compatibility and performance.</li>
+                <li>Repaired and upgraded a laptop during placement, restoring functionality.</li>
+                <li>Troubleshot technical issues for multiple users with minimal downtime.</li>
+                <li>Diagnosed and resolved hardware/software malfunctions hands-on.</li>
+              </ul>
+              <div class="progress mb-3">
+                <div class="progress-bar bg-success" role="progressbar" style="width: 82%;" aria-valuenow="82"
+                  aria-valuemin="0" aria-valuemax="100">82%</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Achievements -->
+  <section id="achievements" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="mb-4 text-center">Achievements</h2>
+      <div class="row g-4">
+
+        <!-- Academic Milestones -->
+        <div class="col-md-4">
+          <div class="card shadow-sm h-100 text-center">
+            <div class="card-body">
+              <i class="fa-solid fa-graduation-cap fa-3x mb-3"></i>
+              <h4 class="card-title">Academic Success</h4>
+              <p>Consistently maintained a strong GPA of above 3.25 during my degree program.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Practical Accomplishments -->
+        <div class="col-md-4">
+          <div class="card shadow-sm h-100 text-center">
+            <div class="card-body">
+              <i class="fa-solid fa-laptop-code fa-3x mb-3"></i>
+              <h4 class="card-title">Technical Projects</h4>
+              <p>Successfully built my own PC and repaired laptops during my placement, resolving technical issues
+                effectively.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Work Placement -->
+        <div class="col-md-4">
+          <div class="card shadow-sm h-100 text-center">
+            <div class="card-body">
+              <i class="fa-solid fa-briefcase fa-3x mb-3"></i>
+              <h4 class="card-title">Professional Growth</h4>
+              <p>Gained hands-on IT experience during my internship, troubleshooting for over 200 users with minimal
+                downtime.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Team Collaboration -->
+        <div class="col-md-4">
+          <div class="card shadow-sm h-100 text-center">
+            <div class="card-body">
+              <i class="fa-solid fa-users fa-3x mb-3"></i>
+              <h4 class="card-title">Team Collaboration</h4>
+              <p>Worked collaboratively with teammates to deliver group projects on time while ensuring quality and
+                accuracy.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Problem Solving -->
+        <div class="col-md-4">
+          <div class="card shadow-sm h-100 text-center">
+            <div class="card-body">
+              <i class="fa-solid fa-wrench fa-3x mb-3"></i>
+              <h4 class="card-title">Problem Solving</h4>
+              <p>Resolved complex hardware and software issues independently, improving systems and reducing downtime.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Self-Learning -->
+        <div class="col-md-4">
+          <div class="card shadow-sm h-100 text-center">
+            <div class="card-body">
+              <i class="fa-solid fa-desktop fa-3x mb-3"></i>
+              <h4 class="card-title">Self-Learning</h4>
+              <p>Developed a strong understanding of PC hardware by independently learning about each component,
+                including CPUs, GPUs, RAM, and motherboards, and successfully assembling custom PCs.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- References -->
+  <section id="references" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="mb-4 text-center">References</h2>
+      <div class="row g-4">
+  
+        <!-- Reference 1 -->
+        <div class="col-md-6">
+          <div class="card shadow-sm h-100">
+            <div class="card-body">
+              <i class="fa-solid fa-user-tie fa-3x mb-3 text-primary"></i>
+              <h4 class="card-title">Liam Tully</h4>
+              <p><strong>Role:</strong> Dispatch Manager, Pat the Baker</p>
+              <p><strong>Email:</strong> <a href="mailto:liam.tully@patthebaker.com">liam.tully@patthebaker.com</a></p>
+              <p><strong>Phone:</strong> +353 87 123 4567</p>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Reference 2 -->
+        <div class="col-md-6">
+          <div class="card shadow-sm h-100">
+            <div class="card-body">
+              <i class="fa-solid fa-user-tie fa-3x mb-3 text-primary"></i>
+              <h4 class="card-title">Kevin Hourican</h4>
+              <p><strong>Role:</strong> CEO, Information Providers</p>
+              <p><strong>Email:</strong> <a href="mailto:kevin.houricain@informationproviders.com">kevin.houricain@informationproviders.com</a></p>
+              <p><strong>Phone:</strong> +353 86 987 6543</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Hobbies & Interests -->
+  <section id="hobbies" class="py-5">
+    <div class="container">
+      <h2 class="mb-4 text-center">Hobbies & Interests</h2>
+      <div class="row g-4">
+        
+        <!-- Hobby 1: Gaming -->
+        <div class="col-md-4">
+          <div class="card shadow-lg h-100 text-center">
+            <div class="card-body">
+              <i class="fa-solid fa-gamepad fa-3x text-primary mb-3"></i>
+              <h4 class="card-title">Gaming</h4>
+              <p>Enjoy playing strategy and action games, which enhance my problem-solving skills and reflexes.</p>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Hobby 2: PC Building -->
+        <div class="col-md-4">
+          <div class="card shadow-lg h-100 text-center">
+            <div class="card-body">
+              <i class="fa-solid fa-desktop fa-3x text-primary mb-3"></i>
+              <h4 class="card-title">PC Building</h4>
+              <p>Passionate about building and upgrading PCs, learning about new hardware, and optimizing performance.</p>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Hobby 3: Technology -->
+        <div class="col-md-4">
+          <div class="card shadow-lg h-100 text-center">
+            <div class="card-body">
+              <i class="fa-solid fa-microchip fa-3x text-primary mb-3"></i>
+              <h4 class="card-title">Technology</h4>
+              <p>Interested in emerging technologies, including AI and exploring how it will shape the future.</p>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Hobby 4: Reading -->
+        <div class="col-md-4">
+          <div class="card shadow-lg h-100 text-center">
+            <div class="card-body">
+              <i class="fa-solid fa-book fa-3x text-primary mb-3"></i>
+              <h4 class="card-title">Reading</h4>
+              <p>Passionate about science fiction books and the universes they inspire, such as those turned into iconic games like Metro 2033 or The Witcher.</p>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Hobby 5: Fitness -->
+        <div class="col-md-4">
+          <div class="card shadow-lg h-100 text-center">
+            <div class="card-body">
+              <i class="fa-solid fa-dumbbell fa-3x text-primary mb-3"></i>
+              <h4 class="card-title">Fitness</h4>
+              <p>Enjoy staying active through weightlifting which helps me stay disciplined and focused.</p>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Hobby 6: Music -->
+        <div class="col-md-4">
+          <div class="card shadow-lg h-100 text-center">
+            <div class="card-body">
+              <i class="fa-solid fa-music fa-3x text-primary mb-3"></i>
+              <h4 class="card-title">Music</h4>
+              <p>Appreciate different genres of music and stated to play the guitar in my spare time to relax and stay creative.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>  
+
+  <!-- Contact Me -->
+  <section id="contact" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="mb-4 text-center">Contact Me</h2>
+      <p class="text-center mb-4">Feel free to get in touch using the details below or by clicking the button to send me a message.</p>
+  
+      <div class="row">
+        <!-- Google Map -->
+        <div class="col-md-6 mb-4">
+          <div class="card shadow-sm">
+            <div class="card-body p-0">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2381.6438580592337!2d-6.260309284165469!3d53.34980557997942!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48670e9aab12e123%3A0x8c3a1234567c0abc!2sDublin%2C%20Ireland!5e0!3m2!1sen!2sie!4v1617192345678!5m2!1sen!2sie"
+                width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy">
+              </iframe>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Contact Information -->
+        <div class="col-md-6 mb-4">
+          <div class="card shadow-sm mb-3">
+            <div class="card-body text-center">
+              <h5 class="card-title"><i class="fa-solid fa-envelope text-primary"></i> Email</h5>
+              <p class="card-text">
+                <a href="mailto:X00186372@mytudublin.ie" class="text-decoration-none">
+                  X00186372@mytudublin.ie
+                </a>
+              </p>
+            </div>
+          </div>
+          <div class="card shadow-sm">
+            <div class="card-body text-center">
+              <h5 class="card-title"><i class="fa-solid fa-phone text-primary"></i> Phone</h5>
+              <p class="card-text">+353 894004367</p>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Get in Touch Button -->
+      <div class="text-center mt-4">
+        <button class="btn btn-primary btn-lg" id="contactModalButton">
+          <i class="fa-solid fa-paper-plane"></i> Get in Touch
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Modal Popup -->
+  <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h5 class="modal-title" id="contactModalLabel">Send Me a Message</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <!-- Modal Body -->
+        <div class="modal-body">
+          <form id="contactForm">
+            <div class="mb-3">
+              <label for="modalEmailInput" class="form-label">Your Email Address</label>
+              <input type="email" class="form-control" id="modalEmailInput" placeholder="name@example.com" required>
+              <small id="modalEmailError" class="text-danger d-none">Please enter a valid email address.</small>
+            </div>
+            <div class="mb-3">
+              <label for="modalSubjectInput" class="form-label">Subject</label>
+              <input type="text" class="form-control" id="modalSubjectInput" placeholder="Subject" required>
+              <small id="modalSubjectError" class="text-danger d-none">Subject is required.</small>
+            </div>
+            <div class="mb-3">
+              <label for="modalMessageInput" class="form-label">Your Message</label>
+              <textarea class="form-control" id="modalMessageInput" rows="4" placeholder="Message" required></textarea>
+              <small id="modalMessageError" class="text-danger d-none">Message is required.</small>
+            </div>
+            <button type="button" class="btn btn-primary w-100" id="sendEmailButton">
+              <i class="fa-solid fa-paper-plane"></i> Send Email
+            </button>
+          </form>
+          <!-- Success Message -->
+          <div id="successMessage" class="alert alert-success mt-4 d-none" role="alert">
+            Your email has been sent successfully!
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Custom JavaScript -->
+  <script src="scripts/myScripts.js"></script>
+</body>
+
+</html>
